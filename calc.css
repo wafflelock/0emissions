@@ -1,0 +1,188 @@
+/* GENERAL RULES */
+* {
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  .orbitron {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  body {
+    background-color: #fbebdc; /* Sets the background color of the page */
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    padding:10px;
+
+  }
+
+.topnav {
+    overflow: hidden;
+    background-color: #332f2b;
+    position: relative;
+    
+    border-radius: 20px;
+    border:6px solid #332f2b;
+    width: 100%;
+ }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+    font-weight: 600;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: #8d7c6c;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: #b9a491;
+    color: #333;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #8d7c6c;
+    display: flex;
+    letter-spacing:7PX;
+    font-weight: 900;
+  }
+
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #b9a491;
+    border:5px solid #332f2b;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding:20px;
+}
+
+h1 {
+    text-align: center;
+    color:#332f2b;
+    margin-bottom:40px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+
+}
+
+label {
+    display: block;
+    color:#332f2b;
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+input {
+    width: 100%;
+    height:45px;
+    font-size: 20px;
+    padding: 8px;
+    margin-bottom: 20px;
+
+    border: 2px solid #332f2b;
+    border-radius: 20px;
+
+}
+input:hover{
+    background-color:#fbebdc;
+}
+
+button {
+    width: 100%;
+    height:50px;
+    padding: 10px;
+    background-color: #332f2b;
+    color: #fbebdc;
+    font-size: 18px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #554e47;
+}
+
+.result {
+    margin-top: 30px;
+    font-size: 18px;
+    text-align: center;
+    color: #332f2b;
+    
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .topnav a {
+    font-size: 24px; /* Reduces font size in nav links */
+    padding: 10px 12px;
+  }
+  
+  .container {
+    width: 90%; /* Adjusts container width for smaller screens */
+    padding: 15px;
+  }
+  
+  h1 {
+    font-size: 32px; /* Reduces heading size */
+    margin-bottom: 30px;
+  }
+
+  input, button {
+    font-size: 18px; /* Adjusts font size in inputs and buttons */
+  }
+}
+
+@media (max-width: 480px) {
+  .topnav a {
+    font-size: 20px;
+    padding: 8px 10px;
+  }
+  
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  input {
+    font-size: 16px;
+    height: 40px;
+  }
+
+  button {
+    font-size: 16px;
+    height: 45px;
+  }
+}

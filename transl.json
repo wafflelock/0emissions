@@ -1,0 +1,20 @@
+{
+    "en": {
+        "title": "0 emissions | Calculator",
+        "header": "Carbon Footprint Calculator",
+        "electricity_label": "Electricity consumption (kWh/month):",
+        "gas_label": "Gas consumption (m³/month):",
+        "miles_label": "Miles driven by car (per month):",
+        "food_label": "Type of diet (1: Vegetarian, 2: Mixed, 3: Carnivore):",
+        "calculate_button": "Calculate Carbon Footprint"
+    },
+    "es": {
+        "title": "0 emisiones | Calculadora",
+        "header": "Calculadora de Huella de Carbono",
+        "electricity_label": "Consumo de electricidad (kWh/mes):",
+        "gas_label": "Consumo de gas (m³/mes):",
+        "miles_label": "Millas recorridas en automóvil (por mes):",
+        "food_label": "Tipo de alimentación (1: Vegetariana, 2: Mixta, 3: Carnívora):",
+        "calculate_button": "Calcular Huella de Carbono"
+    }
+}

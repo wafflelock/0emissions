@@ -1,0 +1,242 @@
+/* GENERAL RULES */
+* {
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  .orbitron {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  body {
+    background-color: #fbebdc; /* Sets the background color of the page */
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    padding:10px;
+
+  }
+
+.topnav {
+    overflow: hidden;
+    background-color: #332f2b;
+    position: relative;
+    
+    border-radius: 20px;
+    border:6px solid #332f2b;
+    width: 100%;
+ }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+    font-weight: 600;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: #8d7c6c;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: #b9a491;
+    color: #333;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #8d7c6c;
+    display: flex;
+    letter-spacing:7PX;
+    font-weight: 900;
+  }
+
+
+  .aboutflex {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente los elementos */
+    border: 7px solid #332f2b;
+    border-radius: 45px;
+    padding: 20px;
+    animation: fadeIn 0.8s ease backwards; /* Animación de desvanecimiento */
+
+    width: 100%;
+    max-width: 1000px;
+    background-color: #ddcab8;
+    margin: 50px auto;
+}
+
+.aboutflex img {
+    border: 5px solid #332f2b;
+    border-radius: 40px;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#about {
+    text-align: center;
+}
+#about p{
+    margin:15px;
+    color:#4d4843;
+    font-size:17px;
+    max-width:60ch;
+    text-align:justify;
+}
+#about h1{
+    color:#332f2b;
+    font-size:45px;
+}
+
+
+.tipsflex {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente los elementos */
+    border: 7px solid #332f2b;
+    border-radius: 45px;
+    padding: 20px;
+    background-color: #c2bba8;
+    width: 100%;
+
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.tipsflex img {
+    border-radius: 60px;
+    width: 400px;
+    max-width: 500px;
+    padding:30px;
+    height: 400px;
+    margin-bottom: 20px;
+}
+#tips {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    text-align: center; /* Center text within each child */
+}
+
+#tips p {
+    margin: 15px;
+    color: #5a574f;
+    font-size: 20px;
+    max-width: 40ch;
+    margin-bottom:50px;
+    text-align: justify; /* This keeps your justification */
+}
+
+#tips h1 {
+    color: #3b3a35;
+    font-size: 45px;
+    margin: 20px;
+    text-align: center; /* This keeps your justification */
+
+}
+#tips h2{
+    font-size:60px;
+    margin:20px;
+    margin-bottom:50px;
+    color: #3b3a35;
+
+}
+
+
+.arrow {
+    text-decoration: none;
+    color: #fbebdc;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    bottom: 20px; 
+    right: 20px; 
+    font-size: 60px; 
+    overflow: hidden;
+    background-color: #332f2b;
+    border-radius: 50%; 
+    width: 63px; /* Ancho del botón */
+    height: 63px; /* Alto del botón */
+    text-align: center; 
+    transition: background-color 0.3s, transform 0.3s; /* Agregamos la transición para el tamaño */
+    position: fixed; 
+
+
+}
+
+.arrow:hover {
+    transform: scale(0.9); /* Reduce el tamaño al 90% cuando el ratón está sobre la flecha */
+}
+
+@media (max-width: 600px) {
+    .topnav a {
+        font-size: 20px; /* Smaller font size on mobile */
+        padding: 8px 10px;
+
+    }
+
+    #about h1, #tips h1, h2 {
+        font-size: 30px; /* Smaller headings */
+    }
+
+    #about p, #tips p {
+        font-size: 14px; /* Smaller paragraph text */
+    }
+}
+
+#maps{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente los elementos */
+    border: 7px solid #332f2b;
+    border-radius: 45px;
+    padding: 20px;
+    background-color: #abb1b4;
+    width: 100%;
+
+    max-width: 1000px;
+    margin: 50px auto;
+}
+#maps h1{
+    color:#34383a;
+    font-size:45px;
+    margin:20px;
+}
+
+iframe{
+    border-radius: 40px;
+    width: 100%;
+    margin-bottom:50px;
+    height:500px;
+}
+#maps h2{
+    font-size:60px;
+    margin:20px;
+    margin-bottom:50px;
+    color: #272a2c;
+    text-align: center;
+}

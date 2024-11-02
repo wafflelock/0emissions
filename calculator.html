@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/icon.ico" href="/img/icon.ico" sizes="32x32">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="calc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=M+PLUS+Rounded+1c:wght@900&family=Noto+Sans+Elbasan&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <title>0 emissions | Calculator</title>
+</head>
+<header>
+<!-- Top Navigation Menu -->
+ 
+<div class="topnav" id="start">
+    <a href="home.html" class="active">0 emissions</a>
+    <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+        <a href="home.html#aboutnav">About</a>
+        <a href="home.html#tipsnav">Tips</a>
+        <a href="home.html#maps">Recycling points</a>
+        <a href="contact.html">Contact</a>
+        <a href="calculator.html">Carbon footprint calculator</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+    <script src="navBar.js"></script>
+</header>
+<body>
+    <div class="container">
+        <h1>Calculadora de Huella de Carbono</h1>
+        <form id="carbon-footprint-form">
+            <div class="input-group">
+                <label for="electricity">Consumo de electricidad (kWh/mes):</label>
+                <input type="number" id="electricity" required>
+            </div>
+            <div class="input-group">
+                <label for="gas">Consumo de gas (m³/mes):</label>
+                <input type="number" id="gas" required>
+            </div>
+            <div class="input-group">
+                <label for="miles">Millas recorridas en automóvil (por mes):</label>
+                <input type="number" id="miles" required>
+            </div>
+            <div class="input-group">
+                <label for="food">Tipo de alimentación (1: Vegetariana, 2: Mixta, 3: Carnívora):</label>
+                <input type="number" id="food" min="1" max="3" required>
+            </div>
+            <button type="submit">Calcular Huella de Carbono</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="calc.js"></script>
+    
+</body>
+</html>

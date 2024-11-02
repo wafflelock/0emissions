@@ -1,0 +1,153 @@
+/* GENERAL RULES */
+* {
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+}
+
+html{
+  scroll-behavior: smooth;
+}
+.orbitron {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+  background-color: #fbebdc; /* Sets the background color of the page */
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  padding:10px;
+
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #332f2b;
+  position: relative;
+  
+  border-radius: 20px;
+  border:6px solid #332f2b;
+  width: 100%;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+  font-weight: 600;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: #8d7c6c;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #b9a491;
+  color: #333;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #8d7c6c;
+  display: flex;
+  letter-spacing:7PX;
+  font-weight: 900;
+}
+
+
+.developer {
+  border-radius: 40px;
+  border: 5px solid #332f2b;
+  background-color: #fbebdc;
+  text-align: center;
+  padding: 20px;
+  width: 90%; /* Se adapta a pantallas pequeñas */
+  max-width: 500px; /* Máximo tamaño en pantallas grandes */
+  height: fit-content;
+  margin: 20px auto;
+}
+
+.developer h2, .developer p {
+  color: #332f2b;
+  text-align: center;
+  max-width: 25ch;
+  margin: 10px auto;
+}
+
+.developer h2 {
+  font-size: 40px;
+}
+
+.devimg {
+  width: 300px; /* Tamaño ajustado */
+  height: 300px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+
+.mail {
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.mail:hover {
+  transform: scale(0.9);
+}
+
+/* Media Query para pantallas pequeñas (tablets y móviles) */
+@media (max-width: 768px) {
+  .developer h2 {
+    font-size: 35px;
+  }
+  .developer p {
+    font-size: 18px;
+  }
+  .devimg {
+    width: 200px;
+    height: 200px;
+  }
+  .mail {
+    height: 40px;
+  }
+}
+
+/* Media Query para pantallas muy pequeñas (móviles en modo retrato) */
+@media (max-width: 480px) {
+  .developer h2 {
+    font-size: 30px;
+  }
+  .developer p {
+    font-size: 16px;
+  }
+  .devimg {
+    width: 150px;
+    height: 150px;
+  }
+  .mail {
+    height: 35px;
+  }
+}
+@media (max-width: 480px) {
+  .topnav a {
+    font-size: 20px;
+    padding: 8px 10px;
+  }
+}
